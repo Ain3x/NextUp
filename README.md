@@ -2,6 +2,12 @@
 
 A personal entertainment queue manager for **Android + iOS**, built with Expo / React Native. NextUp solves "what should I watch tonight?" — a unified queue across anime, movies, and TV shows, with an AI-powered mood-based picker that reasons through your queue and explains *why* it's recommending something.
 
+> ⚠️ **Project Status — Archived / V1**
+>
+> This project is **no longer actively developed**. It represents the original V1 implementation of NextUp, built entirely with **TypeScript, React Native, Expo, and Supabase**.
+>
+> Development has since moved to **NextUp V2**, which is being rebuilt with **.NET as a thin server/API layer** and a more separated backend architecture. This repository is kept as a reference for the original implementation, ideas, and completed features. It may not receive further updates or maintenance.
+
 > Hobby project, non-commercial. Foundation, Auth, Queue, Search, AI Pick (with Discover), Detail Modal, and Profile (with Taste Card, Pace, and rating insights) are complete. Episode notifications and Social features are in progress.
 
 ## Features
@@ -129,10 +135,14 @@ Run the Supabase schema (see `queue` table + Row Level Security policy) and crea
 - Supabase `upsert` on partial payloads can trigger null constraint violations — use targeted `.update()` calls instead
 - Never run `npm audit fix --force` — it downgrades Expo to v49
 
-## Roadmap
+## V1 Status
 
-- [ ] Episode reminder notifications (scheduling logic in progress)
+The following features were planned but were not completed before development moved to V2:
+
+- [ ] Episode reminder notifications
 - [ ] Social module — friends, activity feed, shared cards
+
+These features may be reconsidered or reimplemented in NextUp V2.
 
 ## Author
 
